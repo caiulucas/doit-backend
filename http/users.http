@@ -1,0 +1,28 @@
+### Show
+GET http://localhost:3333/users/66fb4b10-ab7d-4018-9d91-8f0392aaee75
+
+### List
+GET  http://localhost:3333/users
+
+### Create
+POST http://localhost:3333/users
+content-type: application/json
+
+{
+  "name": "Arthur",
+  "email": "arthur@email.com",
+  "password": "123456"
+}
+
+### Update
+PUT http://localhost:3333/users/66fb4b10-ab7d-4018-9d91-8f0392aaee75
+Content-Type: application/json
+
+{
+  "name": "Arthur Souza",
+  "email": "arthuzingameplay@gmail.com",
+  "password": "654321"
+}
+
+### Delete
+DELETE http://localhost:3333/users/c1c45f4d-9bfe-412f-9cc7-ad6905813bd7
